@@ -4,7 +4,7 @@
 Crear una base de datos llamada cine y una tabla llamada peliculas_nombre. La tabla debe tener las columnas: pelicula_id como llave primaria autoincremental, titulo, director, genero, anio_estreno, duracion_minutos, calificacion y disponible.
 ```sql
 CREATE TABLE peliculas_alejandro (
-    pelicula_id INT PRIMARY KEY,
+    pelicula_id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(50) NOT NULL,
     director VARCHAR(50) NOT NULL,
     genero VARCHAR(50) NOT NULL,
@@ -17,18 +17,18 @@ CREATE TABLE peliculas_alejandro (
 
 Insertar por lo menos 10 películas de diferentes géneros y años.
 ```sql
-INSERT INTO peliculas_alejandro (pelicula_id, titulo, director, genero, anio_estreno, duracion_minutos, calificacion, disponible) 
+INSERT INTO peliculas_alejandro (titulo, director, genero, anio_estreno, duracion_minutos, calificacion, disponible) 
 VALUES
-(1, 'Inception', 'Christopher Nolan', 'Ciencia Ficción', 2010, 148, 8.8, FALSE),
-(2, 'Pulp Fiction', 'Quentin Tarantino', 'Crimen', 1994, 154, 8.9, TRUE),
-(3, 'The Matrix', 'Lana Wachowski', 'Ciencia Ficción', 1999, 136, 8.7, FALSE),
-(4, 'Interstellar', 'Christopher Nolan', 'Ciencia Ficción', 2014, 169, 8.6, TRUE),
-(5, 'Spirited Away', 'Hayao Miyazaki', 'Animación', 2001, 125, 8.6, TRUE),
-(6, 'The Godfather', 'Francis Ford Coppola', 'Drama', 1972, 175, 9.2, TRUE),
-(7, 'Parasite', 'Bong Joon Ho', 'Suspenso', 2019, 132, 8.5, FALSE),
-(8, 'Whiplash', 'Damien Chazelle', 'Drama', 2014, 106, 8.5, TRUE),
-(9, 'Gladiator', 'Ridley Scott', 'Acción', 2000, 155, 8.5, TRUE),
-(10, 'The Final Empire', 'Brandon Sanderson', 'Ciencia Ficción', 2017, 164, 10, TRUE);
+('Inception', 'Christopher Nolan', 'Ciencia Ficción', 2010, 148, 8.8, TRUE),
+('Pulp Fiction', 'Quentin Tarantino', 'Crimen', 1994, 154, 8.9, TRUE),
+('The Matrix', 'Lana Wachowski', 'Ciencia Ficción', 1999, 136, 8.7, FALSE),
+('Interstellar', 'Christopher Nolan', 'Ciencia Ficción', 2014, 169, 8.6, TRUE),
+('Spirited Away', 'Hayao Miyazaki', 'Animación', 2001, 125, 8.6, TRUE),
+('The Godfather', 'Francis Ford Coppola', 'Drama', 1972, 175, 9.2, TRUE),
+('Parasite', 'Bong Joon Ho', 'Suspenso', 2019, 132, 8.5, FALSE),
+('Whiplash', 'Damien Chazelle', 'Drama', 2014, 106, 8.5, TRUE),
+('Gladiator', 'Ridley Scott', 'Acción', 2000, 155, 8.5, TRUE),
+('The Final Empire', 'Brandon Sanderson', 'Ciencia Ficción', 2017, 164, 10, TRUE);
 ```
 Mostrar todas las películas.
 ```sql
